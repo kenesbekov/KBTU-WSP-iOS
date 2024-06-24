@@ -7,9 +7,21 @@
 //
 
 import UIKit
+import SwiftUI
 
 // For module inputs and outputs
 typealias ProfileConfiguration = (ProfileModuleInput) -> (Void)
+
+enum ProfileMocks {
+    static let studentProfile: StudentProfile = .init(
+        studentID: "20B000077",
+        firstName: "Студент",
+        lastName: "Студентов",
+        gpa: 4.00,
+        faculty: .fit,
+        avatar: Image(systemName: "person.circle.fill")
+    )
+}
 
 final class ProfileModuleAssembly {
     /// Assembles Module components and returns a target controller
@@ -17,7 +29,7 @@ final class ProfileModuleAssembly {
     /// - Parameter configuration: optional configuration closure called by module owner
     /// - Returns: Assembled module's ViewController
     func assemble(_ configuration: ProfileConfiguration? = nil) -> UIViewController {
-        let viewModel = ProfileViewModel()
+        let viewModel = ProfileViewModel(studentProfile: ProfileMocks.studentProfile)
         let view = ProfileView(viewModel: viewModel)
         let hostingController = ProfileHostingController(rootView: view)
         hostingController.viewModel = viewModel

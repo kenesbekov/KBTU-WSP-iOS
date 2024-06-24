@@ -43,7 +43,7 @@ struct AttendanceView: View {
                 Button {
                     showProfileButtonDidTap?()
                 } label: {
-                    Image("dilnaz")
+                    ProfileMocks.studentProfile.avatar
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(width: 32, height: 32)

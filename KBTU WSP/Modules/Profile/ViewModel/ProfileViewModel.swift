@@ -8,11 +8,39 @@
 
 import Combine
 import Foundation
+import SwiftUI
 import UIKit
 
 final class ProfileViewModel: ObservableObject {
-    required init() {
-        
+    @Published private(set) var studentProfile: StudentProfile
+
+    var avatar: Image {
+        studentProfile.avatar
+    }
+
+    var name: String {
+        "\(studentProfile.firstName) \(studentProfile.lastName)"
+    }
+
+    var id: String {
+        studentProfile.studentID
+    }
+
+    var gpa: String {
+        "GPA: \(studentProfile.gpa)"
+    }
+
+    var faculty: String {
+        switch studentProfile.faculty {
+        case .fit:
+            return "FIT"
+        case .ngd:
+            return "NGD"
+        }
+    }
+
+    init(studentProfile: StudentProfile) {
+        self.studentProfile = studentProfile
     }
     
     // MARK: - ProfileViewOutput methods

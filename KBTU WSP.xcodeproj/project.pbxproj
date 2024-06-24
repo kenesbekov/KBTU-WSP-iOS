@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0008C0E12952010600766998 /* StudentProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0008C0E02952010600766998 /* StudentProfile.swift */; };
 		0038679C29503BA6009979FC /* NotificationsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0038679B29503BA6009979FC /* NotificationsRowView.swift */; };
 		0038679F29503BB8009979FC /* NotificationsRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0038679E29503BB8009979FC /* NotificationsRowViewModel.swift */; };
 		003867A129503BC4009979FC /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003867A029503BC4009979FC /* Notification.swift */; };
@@ -65,6 +66,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0008C0E02952010600766998 /* StudentProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentProfile.swift; sourceTree = "<group>"; };
 		0038679B29503BA6009979FC /* NotificationsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsRowView.swift; sourceTree = "<group>"; };
 		0038679E29503BB8009979FC /* NotificationsRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsRowViewModel.swift; sourceTree = "<group>"; };
 		003867A029503BC4009979FC /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				0068418C294DCAF000271CC8 /* News.swift */,
 				003867A029503BC4009979FC /* Notification.swift */,
 				006841A3294F594100271CC8 /* Schedule.swift */,
+				0008C0E02952010600766998 /* StudentProfile.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -633,6 +636,7 @@
 				00684199294F3FCC00271CC8 /* JournalRowViewModel.swift in Sources */,
 				AE981A226917BCB18977E7DA /* AttendanceView.swift in Sources */,
 				47F67045F024B1C674E3771B /* AttendanceHostingController.swift in Sources */,
+				0008C0E12952010600766998 /* StudentProfile.swift in Sources */,
 				10FFF44817589D2BDC37EC2C /* AttendanceModuleInput.swift in Sources */,
 				B294808B8769AA6C67E3F990 /* AttendanceViewModel.swift in Sources */,
 				01F706D4FAD9AC11BF109F3F /* AttendanceAssembly.swift in Sources */,
